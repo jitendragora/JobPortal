@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Job portal</title>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">JobPortal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">jobs</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            city
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Bangalore</a>
+            <a class="dropdown-item" href="#">Hydrabad</a>
+            <a class="dropdown-item" href="#">Chennai</a>
+            <a class="dropdown-item" href="#">Delhi</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a class="nav-link" href="/register">Register</a>
+    <a class="nav-link" href="/login">Login</a>
+  </nav>
+  <h1 style="text-align: center;  color: rgb(65, 48, 97);">Register Here</h1>
+  <hr class="my-4">
+  <div >
+    <form  action="/register" method="POST">
+      <div class="form-group w-50" style="margin-left: 1%;">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" name = "name" class="form-control input-sm" id="exampleInputName1"  placeholder="Enter Your Name">
+        </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" name = "password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+          <label for="exampleInputPassword1">Confirm Password</label>
+          <input type="password" name = "confirmpassword" class="form-control"  id="exampleInputConfirmPassword1" placeholder="Password">
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+          <label for="exampleInputPassword1">Phone Number</label>
+          <input type="text" name = "phone" class="form-control" id="exampleInputPhoneNumber1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-left: 1%;">Register</button>
+    </form>
+  </div>
+</body>
+</html>

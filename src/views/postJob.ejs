@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+<h1 style = " text-align: center;">Welcome , post your job here!!</h1>
+<div >
+    <form  action="/post_job" method="POST">
+      <div class="form-group w-50" style="margin-left: 1%;">
+          <label for="exampleInputEmail1">Company Name</label>
+          <input type="text" name = "companyName" class="form-control input-sm" id="exampleInputName1"  placeholder="Enter Your Name">
+        </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+          <label for="exampleInputPhoneNumber1">Phone Number</label>
+          <input type="text" name = "phone" class="form-control" id="exampleInputPhoneNumber1" placeholder="Phone Number">
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputprofile1">profile</label>
+        <input type="text" name = "profile" class="form-control" id="exampleInputPhoneNumber1" placeholder="required profile">
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputexperience1">experience</label>
+        <input type="text" name = "experience" class="form-control" id="exampleInputPhoneNumber1" placeholder="experience ">
+      </div>
+      <div class="form-group w-50" style="margin-left: 1%;">
+        <label for="exampleInputcity1">city</label>
+        <input type="text" name = "city" class="form-control" id="exampleInputPhoneNumber1" placeholder="prefered city">
+      </div>
+      
+      <button type="submit" class="btn btn-primary" style="margin-left: 1%;">Post Job</button>
+    </form>
+  </div>
+  

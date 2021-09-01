@@ -1,0 +1,19 @@
+<%- include("header") -%>
+
+<h1 style = "color: cornflowerblue; text-align: center;">Welcome to our job portal!!</h1>
+
+<div class="allJobs" style="margin: auto;
+                            width: 50%;
+                            
+                            padding: 10px;">
+  <%joblist.forEach(job => {%>
+    
+    <div >
+      <h3><%= job.companyName %></h3>
+      <p><%= job.profile %></p>
+      <p><%= job.city %></p>
+      <a href="/apply_job" class="button btn btn-info" style="margin-left: 300px;">Apply</a>
+    </div>
+    <hr>
+  <%})%>
+</div>

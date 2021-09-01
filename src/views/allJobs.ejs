@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+<h1 style = "color: cornflowerblue; text-align: center;">Welcome to our job portal!!</h1>
+
+<div class="allJobs" style="margin: auto;
+                            width: 50%;
+                            padding: 10px;">
+  <%if(joblists.length == 0){%>
+    <div>
+      <h3 style="color: rgb(179, 73, 211);">No results found</h3>
+    </div>
+  <%}%>
+  <%joblists.forEach(job => {%>  
+      <div >
+        <h3><%= job.companyName %></h3>
+        <p><%= job.profile %></p>
+        <p><%= job.city %></p>
+        <button class="button btn btn-info" style="margin-left: 300px; " onclick="sendId(job)">Apply</button>
+      </div>
+      <hr>
+    <%})%>
+</div>
+<div>
+  <footer>copyright@2021</footer>
+</div>
+
+
+
